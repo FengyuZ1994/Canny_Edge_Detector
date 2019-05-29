@@ -9,7 +9,7 @@ Canny detector is one of the most commonly used and most effective method in edg
 3.  Extract edge points: Non-maximum suppression.
 4.  Linking and thresholding: Hysteresis
 
-First two steps are  straight forward, note that in the second step we compute the amplitude as well as the orientation of gradients. Non-maximum suppression: At each pixel location we have four possible directions. We check all directions if the gradient is maximum at this point. After this step one will get discontinous thin edges that needs to be fixed in the next step. Hysteresis is a way of linking the discontinous lines produced in the previous step. 
+All steps above have been implemented from scratch. First two steps are  straight forward, note that in the second step we compute the amplitude as well as the orientation of gradients. Non-maximum suppression: At each pixel location we have four possible directions. We check all directions if the gradient is maximum at this point. After this step one will get discontinous thin edges that needs to be fixed in the next step. Hysteresis is a way of linking the discontinous lines produced in the previous step. 
 
 A quick test on face images with Canny detector: 
 
